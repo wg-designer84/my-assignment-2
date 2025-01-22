@@ -246,20 +246,12 @@ marquee{
     border-radius: 100%;
     padding: 10px 0 0 21px;
     cursor: pointer;
-    animation: 10s linear infinite Round;
+    transition: transform 1s ease-in-out;
 }
 
-@keyframes Round{
-    0%{
-    }
-
-    50%{
-        background: var(--var-secondary-color);
-    }
-    
-    100%{
-        background: var(--var-primary-color);
-    }
+.arrow i:hover{
+    background: var(--var-secondary-color);
+    transform: scale(1.2);
 }
 
 /* Story Section Css */
@@ -491,32 +483,6 @@ footer .content p{
     padding: 20px 0 0 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media Query */
 @media only screen and (max-width: 768px) {  
     nav>.nav-width{
@@ -587,7 +553,6 @@ footer .content p{
         margin: 0 auto;
         font-size: 14px;
     }
-
     
     .Cur h1{
         font-size:26px;
@@ -628,8 +593,13 @@ footer .content p{
         margin: 0px 20px 40px 20px;
     }
 
+    .arrow i{
+        display: none;
+    }
+
     .story{
-        padding: 35px 15px;
+        padding:0 15px 35px 15px;
+        margin-top:-20px;
     }
 
     .story h1{
@@ -648,7 +618,7 @@ footer .content p{
 
     .story-content .content-box .box{
         max-width: 100%;
-        min-height:270px;
+        min-height:280px;
     }
 
     
@@ -664,7 +634,7 @@ footer .content p{
         height: 22px;
         font-size: 10px;
         line-height: 22px;
-        margin: -15px 20px 30px 15px;
+        margin: -15px 20px 30px 8px;
     }
 
     .story-content .content{
