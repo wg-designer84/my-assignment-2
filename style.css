@@ -162,8 +162,7 @@ marquee{
 /* Curriculum Section Css */
 .Cur{
     max-width: 100%;
-    background: url('assets/bg.png') no-repeat center, 
-    linear-gradient(to top, #ffd284 0%, #FFFFFF 100%);
+    background: url('assets/bg.png') no-repeat center;
     background-size: cover, cover;
     padding: 35px;
 }
@@ -185,44 +184,30 @@ marquee{
 }
 
 .Cur-content .content{
-    background: #ffffff;
-    max-width: 530px;
-    min-height:640px;
+    max-width: 368px;
+    min-height:476px;
     border-radius: 16px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
     border: none;
+    padding: 15px 20px;
 }
 
 .Cur-content .content img{
-    width: 100%;
+    width: 142px;
+    height:142px;
     background-size: cover;
     border-radius: 16px 16px 0 0;
-}
-
-.Cur-content .content span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 175px;
-    height: 47px;
-    background: #3CD8E8;
-    color:var(--var-fourth-color);
-    border-radius: 48px;
-    font-family: "Raleway", serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 28px;
-    margin: -30px 20px 40px 15px;
-    position: relative;
-    z-index: 1;
+    display: block;
+    margin: 0 auto;
 }
 
 .Cur-content .content h3{
     font-size: 25px;
     font-weight: 700;
     line-height: 38px;
-    margin: 0px 20px 50px 20px;
+    margin: 15px 20px 15px 20px;
+    text-align: center;
 }
 
 .Cur-content .content p{
@@ -232,28 +217,50 @@ marquee{
     margin: 0px 20px 40px 20px;
 }
 
-.Cur button{
-    width:197px;
-    height:50px;
-    border-radius: 12px;
-    padding: 10px;
-    background: var(--var-third-color);
-    color: var(--var-fourth-color);
-    font-size: 20px;
-    font-weight: 600;
-    border: 0;
-    cursor: pointer;
-    transition: transform 1s ease-in-out;
+.Cur-content .content a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.arrow{
+    justify-content: center;
+    margin: 80px 0 20px 0;
+}
+
+.arrow i{
     display: block;
-    margin:60px auto 30px auto;
-}
-
-.Cur button:hover{
+    width: 60px;
+    height: 60px;
     background: var(--var-primary-color);
+    margin-right: 20px;
+    font-size: 30px;
+    line-height: 40px;
     color: var(--var-fourth-color);
-    transform: scale(1.1);
+    border-radius: 100%;
+    padding: 10px 0 0 21px;
+    cursor: pointer;
+    animation: 10s linear infinite Round;
 }
 
+@keyframes Round{
+    0%{
+    }
+
+    50%{
+        background: var(--var-secondary-color);
+    }
+    
+    100%{
+        background: var(--var-primary-color);
+    }
+}
 
 /* Story Section Css */
 .story{
@@ -579,6 +586,46 @@ footer .content p{
         display: block;
         margin: 0 auto;
         font-size: 14px;
+    }
+
+    
+    .Cur h1{
+        font-size:26px;
+        line-height: 38px;
+    }
+
+    .Cur-content{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Cur-content .content {
+        max-width: 100%;
+        min-height: 321px;
+        padding: 30px 15px;
+    }
+
+    .Cur-content .content img {
+        width: 92px;
+        height: 92px;
+        background-size: cover;
+        border-radius: 16px 16px 0 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .Cur-content .content h3{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 20px 10px 15px 10px;
+    }
+
+    .Cur-content .content p {
+        font-size: 11px;
+        line-height: 21px;
+        margin: 0px 20px 40px 20px;
     }
 
     .story{
