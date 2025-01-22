@@ -641,6 +641,12 @@ footer .content p{
         display: none;
     }
 
+    .story button{
+        width:131px;
+        height:42px;
+        font-size: 14px;
+    }
+
     footer{
         max-width: 100%;
         height: auto;
